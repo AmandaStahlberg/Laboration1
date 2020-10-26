@@ -66,3 +66,13 @@ function changeColor() {
     let main = document.getElementsByTagName('main')
     main[0].style.background = addColor   
 }
+
+function dice() {
+    let randomNumber = Math.random() * 6
+    return Math.ceil(randomNumber)
+}
+
+function rollDice() {
+    let result = dice()
+    alert('Du fick: ' + result)
+}
