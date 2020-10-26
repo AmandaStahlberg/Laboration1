@@ -1,5 +1,14 @@
 
-
+function leaveTheGame() {
+    let leave = prompt('Vill du verkligen gå hem, redan?')
+    if (leave == 'ja') {
+        alert('GRATTIS DU VANN!')
+    } else if (leave == 'nej') {
+        alert('Bra val att stanna en stund till hemma hos mig!')
+    } else {
+        alert('här kan bara ja och nej i små bokstäver användas')
+    }
+}
 
 function lightSwitch() {
     let main = document.getElementsByTagName('main')
@@ -9,6 +18,16 @@ function lightSwitch() {
         bodyStyle.background = 'black'
     } else {
         bodyStyle.background ='white'
+    }
+}
+
+function helpKonrad() {
+    const konrad = prompt('Hjälp mig räkna ut 367*809, till din hjälp har du en miniräknare i ryggsäcken.')
+    
+    if (konrad == 296903) {
+        alert('JA TACK SÅ MYCKET DET VAR RÄTT!')
+    } else {
+        alert('Det var fel! försök igen.')
     }
 }
 
