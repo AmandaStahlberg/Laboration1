@@ -60,3 +60,9 @@ function calculator() {
 
     alert ('Detta kom vi fram till: ' + sum)
 }
+
+function changeColor() {
+    const addColor = prompt('Vilken färg vill du byta ljuset till?')
+    let main = document.getElementsByTagName('main')
+    main[0].style.background = addColor   
+}
