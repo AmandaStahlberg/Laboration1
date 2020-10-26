@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: bisque;
+}
+
+main {
+    padding-top: 4rem;
+    height: 100vh;
+    background-color: black;
+}
+
+.textDarkMode {
+    color: antiquewhite;
+}
+
+.backPack {
+    height: 4rem;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
