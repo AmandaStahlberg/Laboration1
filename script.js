@@ -1,6 +1,12 @@
 
 function goToLivingroom() {
-    const kode = prompt('För att komma in hit måste du först gå till köket för att få rätt kod! Skriv din kod här:')
+    const kode = prompt('Du behöver en kod för att komma in här. Skriv din kod här:')
+    
+    if(kode === '5505'){
+        window.location.href = './livingroom.html'
+    } else {
+        alert('Fel kod. Försök igen. Koden hittar du i köket.')
+    }
 }
 
 function leaveTheGame() {
@@ -10,7 +16,7 @@ function leaveTheGame() {
     } else if (leave == 'nej') {
         alert('Bra val att stanna en stund till hemma hos mig!')
     } else {
-        alert('här kan bara ja och nej i små bokstäver användas')
+        alert('För att få ett svar, skriv ja eller nej i små bokstäver.')
     }
 }
 
@@ -18,7 +24,7 @@ function goToKitchen() {
     let six = prompt('Kasta tärningen och skriv in resultatet här:') 
     
     if (six === '6'){
-        window.location.href = "./kitchen.html"
+        window.location.href = './kitchen.html'
     } else {
         alert('Det var fel, kasta tärningen igen.')
     }

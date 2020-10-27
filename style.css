@@ -49,7 +49,7 @@ main {
 }
 
 .padding {
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .border {
@@ -61,4 +61,8 @@ main {
 
 .backPackButton {
     margin: .2rem;
+}
+
+.hover {
+    cursor: pointer;
 }
