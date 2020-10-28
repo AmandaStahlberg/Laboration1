@@ -10,5 +10,10 @@ header {
 main {
     padding-top: 4rem;
     height: 100vh;
-    background-color: white;
+    background-color: lightpink;
+    color: lightpink;
+}
+
+main i {
+    color: black;
 }

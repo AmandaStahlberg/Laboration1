@@ -12,7 +12,12 @@ function goToLivingroom() {
 function leaveTheGame() {
     let leave = prompt('Vill du verkligen gå hem? Har du redan prövat allt som går att utforska?')
     if (leave == 'ja') {
-        alert('GRATTIS DU VANN!')
+        const escape = prompt('Oh nej, dörren har gått i lås. du behöver en speciell kod för att ta dig ut.')
+        if (escape === '302010') {
+            alert('GRATTIS DU VANN!')
+        } else {
+            alert('Fel kod, försök igen. Kanske behöver du utforska rummen lite mer?')
+        }
     } else if (leave == 'nej') {
         alert('Bra val att stanna en stund till hemma hos mig!')
     } else {
@@ -115,4 +120,10 @@ function uselessAnswer() {
 
 function helpKitchen() {
     alert('Jag kan tyvärr inte hjälpa dig! Men det kan "Useless-verktyget". Säga bara "Jag behöver hjälp!".')
+}
+
+// functions for Livingroom 
+
+function helpLivingroom() {
+    alert('För att se den gömda koden måste du måla om lampan. Färgpaletten finner du i ryggsäcken.')
 }
