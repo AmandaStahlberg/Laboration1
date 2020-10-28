@@ -12,7 +12,7 @@ function goToLivingroom() {
 function leaveTheGame() {
     let leave = prompt('Vill du verkligen gå hem? Har du redan prövat allt som går att utforska?')
     if (leave == 'ja') {
-        const escape = prompt('Oh nej, dörren har gått i lås. du behöver en speciell kod för att ta dig ut.')
+        const escape = prompt('Oh nej, dörren har gått i lås. du behöver en speciell kod för att ta dig ut. Den hittar du i vardagsrummet.')
         if (escape === '302010') {
             alert('GRATTIS DU VANN!')
         } else {
