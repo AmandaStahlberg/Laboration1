@@ -105,7 +105,7 @@ function uselessAnswer() {
     let answer = prompt('Hej, här kan du ställa vilken fråga du vill!')
 
     if (answer === 'Jag behöver hjälp!') {
-        alert('Jo tack jag märker det, här är din kod som du behöver: 5505')
+        alert('Jo tack jag märker det, här är din kod som du behöver: 102030')
     } else {
         alert('Jag kan tyvärr inte svara på det!')
     }
@@ -114,5 +114,5 @@ function uselessAnswer() {
 // functions for Kitchen
 
 function helpKitchen() {
-    alert('Här är koden in till vardagsrummet: 102030')
+    alert('Jag kan tyvärr inte hjälpa dig! Men det kan "Useless-verktyget". Säga bara "Jag behöver hjälp!".')
 }
