@@ -119,7 +119,12 @@ function uselessAnswer() {
 // functions for Kitchen
 
 function helpKitchen() {
-    alert('Jag kan tyvärr inte hjälpa dig! Men det kan "Useless-verktyget". Säga bara "Jag behöver hjälp!".')
+    const codeKitchen = prompt('För att jag ska kunna hjälpa dig, behöver jag koden från Konrad först')
+    if (codeKitchen === '5505') {
+    alert('Tack! Men jag kan tyvärr inte hjälpa dig! Men det kan "Useless-verktyget". Säga bara "Jag behöver hjälp!".')
+    } else {
+        alert('Det var tyvärr inte rätt.')
+    }
 }
 
 // functions for Livingroom 
