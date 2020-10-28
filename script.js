@@ -2,7 +2,7 @@
 function goToLivingroom() {
     const kode = prompt('Du behöver en kod för att komma in här. Skriv din kod här:')
     
-    if(kode === '5505'){
+    if(kode === '102030'){
         window.location.href = './livingroom.html'
     } else {
         alert('Fel kod. Försök igen. Koden hittar du i köket.')
@@ -26,7 +26,7 @@ function goToKitchen() {
     if (six === '6'){
         window.location.href = './kitchen.html'
     } else {
-        alert('Det var fel, kasta tärningen igen.')
+        alert('Det var fel, kasta tärningen igen. Har du inte kastat tärningen än? Gör det den ligger i din ryggsäck.')
     }
 }
 
@@ -109,4 +109,10 @@ function uselessAnswer() {
     } else {
         alert('Jag kan tyvärr inte svara på det!')
     }
+}
+
+// functions for Kitchen
+
+function helpKitchen() {
+    alert('Här är koden in till vardagsrummet: 102030')
 }

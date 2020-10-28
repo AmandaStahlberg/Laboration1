@@ -1,0 +1,48 @@
+.backPack {
+    height: 4rem;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.flex {
+    display:flex;
+}
+
+.space-around-row {
+    justify-content: space-around;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.iconSize {
+    font-size: 3rem;
+}
+
+.padding {
+    padding: 4rem;
+}
+
+.border {
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+    margin-bottom: .5rem;
+}
+
+.backPackButton {
+    margin: .2rem;
+}
+
+.hover {
+    cursor: pointer;
+}
