@@ -91,7 +91,7 @@ function calculator() {
 }
 
 function changeColor() {
-    const addColor = prompt('Vilken färg vill du byta ljuset till?')
+    const addColor = prompt('Vilken färg vill du byta ljuset till? OBS jag kan bara färger på engelska?')
     let main = document.getElementsByTagName('main')
     main[0].style.background = addColor   
 }
