@@ -1,14 +1,15 @@
-
+/** A function that takes you to the "livingroom". */
 function goToLivingroom() {
-    const kode = prompt('Du behöver en kod för att komma in här. Skriv din kod här:')
+    const code = prompt('Du behöver en kod för att komma in här. Skriv din kod här:')
     
-    if(kode === '102030'){
+    if(code === '102030'){
         window.location.href = './livingroom.html'
     } else {
         alert('Fel kod. Försök igen. Koden hittar du i köket.')
     }
 }
 
+/** Function to win the game or not. */
 function leaveTheGame() {
     let leave = prompt('Vill du verkligen gå hem? Har du redan prövat allt som går att utforska?')
     if (leave == 'ja') {
@@ -25,6 +26,7 @@ function leaveTheGame() {
     }
 }
 
+/** A function that takes you to the "Kitchen". */
 function goToKitchen() {
     let six = prompt('Kasta tärningen och skriv in resultatet här:') 
     
@@ -35,6 +37,7 @@ function goToKitchen() {
     }
 }
 
+/** A toogle to change the color of the page between white and black. */
 function lightSwitch() {
     let main = document.getElementsByTagName('main')
     let bodyStyle = main[0].style
@@ -46,6 +49,7 @@ function lightSwitch() {
     }
 }
 
+/** A function to get a challenge from "Konrad". */
 function helpKonrad() {
     const konrad = prompt('Hjälp mig räkna ut 367*15, till din hjälp har du en miniräknare i ryggsäcken.')
     
@@ -56,10 +60,12 @@ function helpKonrad() {
     }
 }
 
+/** This gives you help when you click the questionmark. */
 function help() {
     alert('Jag ser att du behöver hjälp! Ett tips är att först försöka ta dig till köket och sedan till vardagsrummet.')
 }
 
+/** Funtion for a simple calculator. */
 function calculator() {
     let number1 = prompt('första talet')
     const operator = prompt('välj räknesätt (+ - / *)')
@@ -90,22 +96,26 @@ function calculator() {
     alert ('Detta kom vi fram till: ' + sum)
 }
 
+/** Function to change the color on the page. */
 function changeColor() {
     const addColor = prompt('Vilken färg vill du byta ljuset till? OBS jag kan bara färger på engelska?')
     let main = document.getElementsByTagName('main')
     main[0].style.background = addColor   
 }
 
+/** Function for calculate the number on the dice. */
 function dice() {
     let randomNumber = Math.random() * 6
     return Math.ceil(randomNumber)
 }
 
+/** Function to roll the dice. */
 function rollDice() {
     let result = dice()
     alert('Du fick: ' + result)
 }
 
+/** Funtion for a wierd "answer machine". */
 function uselessAnswer() {
     let answer = prompt('Hej, här kan du ställa vilken fråga du vill!')
 
@@ -118,6 +128,7 @@ function uselessAnswer() {
 
 // functions for Kitchen
 
+/** Function for the challenge in the kitchen. */
 function helpKitchen() {
     const codeKitchen = prompt('För att jag ska kunna hjälpa dig, behöver jag koden från Konrad först')
     if (codeKitchen === '5505') {
@@ -129,6 +140,7 @@ function helpKitchen() {
 
 // functions for Livingroom 
 
+/** Function for the challenge in the kitchen. */
 function helpLivingroom() {
     alert('För att se den gömda koden måste du måla om lampan. Färgpaletten finner du i ryggsäcken.')
 }
