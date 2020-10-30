@@ -15,7 +15,6 @@ function leaveTheGame() {
 
     if (leave == 'ja') {
         const escape = prompt('Oh nej, dörren har gått i lås. du behöver en speciell kod för att ta dig ut. Den hittar du i vardagsrummet.')
-        
         if (escape === '302010') {
             alert('GRATTIS DU VANN!')
         } else {
@@ -95,7 +94,7 @@ function calculator() {
         return
     }
 
-    alert ('Detta kom vi fram till: ' + sum)
+    alert ('Detta kom jag fram till: ' + sum)
 }
 
 /** Function to change the color on the page. */
@@ -117,7 +116,7 @@ function rollDice() {
     alert('Du fick: ' + result)
 }
 
-/** Funtion for a wierd "answer machine". */
+/** Function for a weird "answer machine". */
 function uselessAnswer() {
     const answer = prompt('Hej, här kan du ställa vilken fråga du vill!')
 
@@ -132,11 +131,12 @@ function uselessAnswer() {
 
 /** Function for the challenge in the kitchen. */
 function helpKitchen() {
-    const codeKitchen = prompt('För att jag ska kunna hjälpa dig, behöver jag koden från Konrad först')
+    const codeKitchen = prompt('För att jag ska kunna hjälpa dig, behöver jag koden från Konrad först.')
+
     if (codeKitchen === '5505') {
-    alert('Tack! Men jag kan tyvärr inte hjälpa dig! Men det kan "Useless-verktyget". Säga bara "Jag behöver hjälp!".')
+        alert('Tack! Men jag kan tyvärr inte hjälpa dig! Men det kan "Useless-verktyget". Säga bara "Jag behöver hjälp!".')
     } else {
-        alert('Det var tyvärr inte rätt.')
+        alert('Det var tyvärr inte rätt kod. Har du inte hittat Konrad än? Han står i hallen och väntar på dig.')
     }
 }
 
