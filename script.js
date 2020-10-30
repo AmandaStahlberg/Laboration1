@@ -12,8 +12,10 @@ function goToLivingroom() {
 /** Function to win the game or not. */
 function leaveTheGame() {
     let leave = prompt('Vill du verkligen gå hem? Har du redan prövat allt som går att utforska?')
+
     if (leave == 'ja') {
         const escape = prompt('Oh nej, dörren har gått i lås. du behöver en speciell kod för att ta dig ut. Den hittar du i vardagsrummet.')
+        
         if (escape === '302010') {
             alert('GRATTIS DU VANN!')
         } else {
@@ -28,7 +30,7 @@ function leaveTheGame() {
 
 /** A function that takes you to the "Kitchen". */
 function goToKitchen() {
-    let six = prompt('Kasta tärningen och skriv in resultatet här:') 
+    const six = prompt('Kasta tärningen och skriv in resultatet här:') 
     
     if (six === '6'){
         window.location.href = './kitchen.html'
@@ -39,8 +41,8 @@ function goToKitchen() {
 
 /** A toogle to change the color of the page between white and black. */
 function lightSwitch() {
-    let main = document.getElementsByTagName('main')
-    let bodyStyle = main[0].style
+    const main = document.getElementsByTagName('main')
+    const bodyStyle = main[0].style
     
     if (bodyStyle.background == 'white'){
         bodyStyle.background = 'black'
@@ -99,7 +101,7 @@ function calculator() {
 /** Function to change the color on the page. */
 function changeColor() {
     const addColor = prompt('Vilken färg vill du byta ljuset till? OBS jag kan bara färger på engelska?')
-    let main = document.getElementsByTagName('main')
+    const main = document.getElementsByTagName('main')
     main[0].style.background = addColor   
 }
 
@@ -117,7 +119,7 @@ function rollDice() {
 
 /** Funtion for a wierd "answer machine". */
 function uselessAnswer() {
-    let answer = prompt('Hej, här kan du ställa vilken fråga du vill!')
+    const answer = prompt('Hej, här kan du ställa vilken fråga du vill!')
 
     if (answer === 'Jag behöver hjälp!') {
         alert('Jo tack jag märker det, här är din kod som du behöver: 102030')

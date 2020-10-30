@@ -41,10 +41,6 @@ header a {
     font-size: 3rem;
 }
 
-.padding {
-    padding: 4rem;
-}
-
 .border {
     padding: 0.5rem;
     border: 1px solid black;
@@ -85,3 +81,10 @@ header a {
     cursor: pointer;
 }
 
+.margin-right {
+    margin-right: 15rem;
+}
+
+.margin-bottom {
+    margin-bottom: 5rem;
+}
